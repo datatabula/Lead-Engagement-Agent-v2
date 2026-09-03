@@ -340,7 +340,7 @@ else:
     copy_button_for_text(build_readable_output(output.engagement_plan, used_input), "engagement_plan_copy")
 
     with st.expander("Show raw JSON"):
-    st.code(output.engagement_plan.model_dump_json(indent=2, ensure_ascii=False), language="json")
+        st.code(output.engagement_plan.model_dump_json(indent=2, ensure_ascii=False), language="json")
 
     if output.research_findings is not None:
         with st.expander("🔍 See the research"):
