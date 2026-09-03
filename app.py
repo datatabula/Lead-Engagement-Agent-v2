@@ -298,29 +298,19 @@ except Exception as e:
     brief_error = str(e)
 
 if st.session_state.leav2_output is None:
-    col_middle, col_right = st.columns(2)
+    if brief_error:
+        st.error(brief_error)
 
-    with col_middle:
-        st.subheader("Research brief (LEAInput)")
-        if brief_error:
-            st.error(brief_error)
-        else:
-            st.code(brief_json, language="json")
+    generate_clicked = st.button("Research and Strategize for me")
 
-        generate_clicked = st.button("Research and Strategize for me")
-
-        if generate_clicked and lea_input is not None:
-            with st.spinner("Researching and building your engagement plan may take a minute..."):
-                try:
-                    st.session_state.leav2_output = run_pipeline(lea_input)
-                    st.session_state.leav2_used_input = lea_input
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Something went wrong: {e}")
-
-    with col_right:
-        st.subheader("Engagement Plan")
-        st.write("Fill out the research brief and click the button to generate.")
+    if generate_clicked and lea_input is not None:
+        with st.spinner("Researching and building your engagement plan may take a minute..."):
+            try:
+                st.session_state.leav2_output = run_pipeline(lea_input)
+                st.session_state.leav2_used_input = lea_input
+                st.rerun()
+            except Exception as e:
+                st.error(f"Something went wrong: {e}")
 
 else:
     st.subheader("Engagement Plan")
