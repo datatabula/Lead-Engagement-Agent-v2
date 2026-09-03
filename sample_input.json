@@ -1,0 +1,16 @@
+{
+  "found_contact": "Found a contact at ASCL — Tanaka-san, HR manager, tanaka@ascl.co.jp",
+  "found_buying_signal": "new HR manager in charge",
+  "lead_name": null,
+  "company": "ASCL Ltd",
+  "engagement_type": "1st_touch_no_connection",
+  "warm": null,
+  "rapport_position": null,
+  "rapport_company": null,
+  "rapport_industry": null,
+  "likely_objection": ["already have a provider"],
+  "i_am": "marc",
+  "method": "linkedin",
+  "calendly": false,
+  "more_context": null
+}

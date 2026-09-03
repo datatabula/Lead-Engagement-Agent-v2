@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# App-generated caches and logs (regenerated automatically — not source code)
+ep_cache.json
+research_cache.json
+api_costs.csv
+search_trace.csv
+
+# macOS
+.DS_Store
