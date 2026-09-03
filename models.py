@@ -172,6 +172,7 @@ class WritingOutput(BaseModel):
 class LEAv2Output(BaseModel):
     engagement_plan: EngagementPlan
     messages: List[WrittenMessage] = Field(min_length=2, max_length=2)
+    research_findings: Optional[ResearchFindings] = None
 
 if __name__ == "__main__":
 

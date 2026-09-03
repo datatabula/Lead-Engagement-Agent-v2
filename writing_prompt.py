@@ -48,6 +48,26 @@ step will adapt it into English, so do not rely on that step to add information.
 - Mention the recipient's company at least once in every message. Each message
   must feel specific to that company.
 
+## PARAGRAPH BREAKS
+
+Format the Japanese message body with line breaks (a single newline, not
+a blank line) at these two points:
+
+1. Immediately after the recipient's name and 様、- the greeting stands
+alone as its own first line.
+
+2. A second break further into the body:
+   - If the message includes a mention of your own past experience or
+     social proof (e.g., a reference to Mercari), place the break
+     immediately before that sentence.
+   - If the message does not include such a mention, place the break
+     immediately before the final call-to-action sentence (the question
+     asking for a conversation/meeting).
+
+Do not add line breaks anywhere else in the body - the text on either
+side of each break should otherwise read as continuous prose. This
+applies to both LinkedIn and email bodies, regardless of engagement type.
+
 ## FACTS, ASSUMPTIONS, AND SOFTENERS
 Publicly supported facts may be stated as facts. Do not exaggerate beyond what
 the supplied evidence supports. When a rapport point contains `evidence_url`,
@@ -247,18 +267,15 @@ present in the Japanese must also appear in your English version \
 - never add a claim that isn't in the Japanese, and never drop \
 one that is.
 
-Specific fixed phrases - render these consistently whenever they \
-appear in the Japanese, rather than translating them fresh each \
-time:
-- The self-introduction "COMASJAPAN株式会社のマーク・アンダーソンと\
-申します" (or any close phrasing of it) becomes: "My name is Marc \
-Anderson, from COMASJAPAN."
-- The Mercari social-proof sentence becomes: "I previously worked \
-at Mercari on language and communication challenges tied to \
-globalizing engineering teams, and now provide corporate Japanese \
-and English training." Mercari is a standalone company, \
-unaffiliated with any other company - never describe it as \
-connected to any other company.
+## PARAGRAPH BREAKS
+
+The Japanese source message you're adapting already has line breaks at
+two points: right after the greeting, and at one point further into the
+body (either right before a past-experience/social-proof mention, e.g.
+Mercari, or right before the final call-to-action question if there's no
+such mention). Preserve this exact same paragraph structure in your
+English adaptation - matching line breaks in the same two positions. Do
+not add line breaks anywhere else in the body.
 
 Other rules:
 1. Every sentence must be 25 words or fewer.

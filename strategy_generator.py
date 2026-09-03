@@ -96,7 +96,7 @@ def merge_objections(*objection_lists, limit=3):
                 combined.append(obj)
     return combined[:limit]
 
-def build_engagement_plan(lea_input, hierarchy, research_findings, run_id=None, found_contact=None, competitor_it_was_found_under=None):
+def build_engagement_plan(lea_input, hierarchy, research_findings, run_id=None, found_contact=None, found_contact_note=None, competitor_it_was_found_under=None):
 
     response = client.messages.create(
         model = "claude-sonnet-5",
@@ -188,7 +188,6 @@ def build_engagement_plan(lea_input, hierarchy, research_findings, run_id=None, 
                 engagement_plan.contact_role_category, "Anytime during business hours"
             )
 
-            engagement_plan.recommended_contact_time = CONTACT_WINDOWS[contact_role_category]
             if engagement_plan.other_recommended_next_actions:
                 engagement_plan.other_recommended_next_actions += " Reasonable additional time to spend researching this target is 15 mins max."
 

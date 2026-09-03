@@ -35,10 +35,10 @@ def editable_with_copy(label, text, box_id):
     components.html(f"""
         <div style="font-family: sans-serif;">
             <div style="font-size: 13px; margin-bottom: 4px; color: #888;">{label}</div>
-            <textarea id="{box_id}" style="width: 100%; height: 420px; font-family: monospace; font-size: 14px; padding: 8px; box-sizing: border-box;">{escaped}</textarea>
+            <textarea id="{box_id}" style="width: 100%; height: 320px; font-family: monospace; font-size: 14px; padding: 8px; box-sizing: border-box;">{escaped}</textarea>
             <button onclick="navigator.clipboard.writeText(document.getElementById('{box_id}').value)" style="margin-top: 6px; padding: 4px 12px; cursor: pointer;">📋 Copy</button>
         </div>
-    """, height=480)
+    """, height=400)
 
 def build_readable_output(ep, lea_input) -> str:
     lines = []
