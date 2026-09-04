@@ -5,6 +5,7 @@ Takes one qualified sales lead and turns it into a b2b contact-ready outreach pa
 Built for Language instruction company (that has mercari, line, NEC as its clients) as part of an internal, multi-agent sales tooling project. 
 
 **Live demo:** https://lead-engagement-agent-v2.streamlit.app
+![LEAv2 demo](demo.gif)
 
 ## What it does
 
@@ -58,4 +59,3 @@ pip install -r requirements.txt
 
 This is **V1** — the current scope stops at producing a contact-ready Engagement Plan and two draft messages. Planned future versions will handle choosing the outreach angle more adaptively (V2) and managing send timing, sequencing, and follow-up (V3).
 
-*(Screenshot coming soon.)*
